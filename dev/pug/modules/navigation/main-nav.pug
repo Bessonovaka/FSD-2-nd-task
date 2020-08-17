@@ -1,0 +1,13 @@
+mixin mainNavItem(link,text)
+    li.main-nav__item
+        a(href=link).main-nav__link=text
+
+nav.main-nav
+    ul.main-nav__list.inline-menu
+        +mainNavItem('','О нас')
+        +mainNavItem('','Услуги')
+            +icon('arrow-to-down','main-nav__icon')
+        +mainNavItem('','Вакансии')
+        +mainNavItem('','Новинки')
+        +mainNavItem('','Соглашения')
+            +icon('arrow-to-down','main-nav__icon')

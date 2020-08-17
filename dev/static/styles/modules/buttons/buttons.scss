@@ -1,0 +1,13 @@
+.btn {
+    border: 2px solid $purple;
+    border-radius: 22px;
+    color: $purple;
+    padding: 10px 20px;
+    text-decoration: none;
+    &--bg {
+        &-gradient {
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            color: $white;
+        }
+    }
+}
