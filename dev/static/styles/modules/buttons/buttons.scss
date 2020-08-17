@@ -7,12 +7,6 @@
     text-decoration: none;
     text-transform: uppercase;
     width: 100%;
-    &__arrow {
-        height: 18px;
-        fill: $white;
-        float: right;
-        width: 18px;
-    }
     &--bg {
         &-gradient {
             background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);

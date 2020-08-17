@@ -1,10 +1,10 @@
 mixin mainNavItem(link,text,icon)
     li.main-nav__item
-        a(href=link).main-nav__link=text
+        a(href=link).main-nav__link.menu__link=text
             +icon(icon,'main-nav__icon')
 
 nav.main-nav
-    ul.main-nav__list.inline-menu
+    ul.main-nav__list.menu--inline
         +mainNavItem('','О нас')
         +mainNavItem('','Услуги','arrow-to-down')
         +mainNavItem('','Вакансии')

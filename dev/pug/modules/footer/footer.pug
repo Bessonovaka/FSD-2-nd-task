@@ -1,0 +1,48 @@
+mixin listColumnItem(link,text)
+    li.footer-nav__item
+        a(href=link).footer-nav__link.menu__link=text
+
+footer.footer
+    .footer__top
+        .footer__item
+            include ../logo/logo
+            span.text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+        .footer__item
+            .footer__title.title-label навигация
+            nav.footer__nav
+                ul.menu--column
+                    +listColumnItem('','О нас')
+                    +listColumnItem('','Новости')
+                    +listColumnItem('','Служба поддержки')
+                    +listColumnItem('','Услуги')
+        .footer__item
+            .footer__title.title-label о нас
+            nav.footer__nav
+                ul.menu--column
+                    +listColumnItem('','О сервисе')
+                    +listColumnItem('','Наша команда')
+                    +listColumnItem('','Вакансии')
+                    +listColumnItem('','Инвесторы')
+        .footer__item
+            .footer__title.title-label служба поддержки
+            nav.footer__nav
+                ul.menu--column
+                    +listColumnItem('','Соглашения')
+                    +listColumnItem('','Сообщества')
+                    +listColumnItem('','Связь с нами')
+        .footer__item
+            .footer__title.title-label подписка
+            .menu--column
+                span.text Получайте специальные предложения и новости сервиса
+                .dropdown-subscription
+                    input(type="email" name="email" placeholder="Email").dropdown.dropdown-subscription__text-field
+                    img(src="static/images/content/arrow_forward.svg", alt="отправить").arrow-forward.dropdown-subscription__icon   
+    .footer__bottom
+        span.copyright Copyright © 2018 Toxin отель. Все права зачищены.
+        .socials
+            img(src="static/images/content/twitter.svg", alt="twitter").socials__icon  
+            img(src="static/images/content/facebook.svg", alt="facebook").socials__icon 
+            img(src="static/images/content/instagram.svg", alt="instagram").socials__icon  
+            
+
+
