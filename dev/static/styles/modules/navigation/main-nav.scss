@@ -5,4 +5,10 @@
         line-height: 17px;
         text-decoration: none;
     }
+    &__icon {
+        height: 8px;
+        fill: $dark-shade-50;
+        margin-left: 6.5px;
+        width: 12px;
+    }
 }
