@@ -3,16 +3,17 @@
         h1.form__title.title-widget Найдём номера под ваши пожелания
         .form__group
             .form__item
-                .form__label.title-label прибытие
+                h3.form__label.title-label прибытие
                 input(type="date").form__input.dropdown
             .form__item
-                .form__label.title-label выезд
+                h3.form__label.title-label выезд
                 input(type="date").form__input.dropdown
         .form__item
-            .form__label.title-label гости
+            h3.form__label.title-label гости
             select.form__input.dropdown
                 option(hidden="").dropdown__item Сколько гостей
                 option.dropdown__item 2
-        button.form__btn.btn.btn--bg-gradient подобрать номер
+        button.form__btn.btn.btn--bg-gradient 
+            a(href="search-room.html").btn__link подобрать номер
             +icon('arrow_forward','arrow-forward')       
     span.text Лучшие номера для вашей работы, отдыха и просто вдохновения

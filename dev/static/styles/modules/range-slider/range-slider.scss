@@ -1,0 +1,66 @@
+.range-slider {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.irs--big {
+    height: 52px;
+  }
+.irs--big .irs-line {
+    height: 6px;
+    background: #FFFFFF;
+    border: 1px solid $dark-shade-25;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  .irs--big .irs-bar {
+    height: 6px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 3px;
+  }
+  .irs--big .irs-shadow {
+    height: 1px;
+    bottom: 16px;
+    background-color: rgba(66, 139, 202, 0.5);
+  }
+  .irs--big .irs-handle {
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    border-radius: 30px;
+    height: 12px;
+    top: 55.9999%;
+    width: 12px;
+  }
+  .irs--big .irs-handle.state_hover,
+  .irs--big .irs-handle:hover {
+    border-color: rgba(0, 0, 0, 0.45);
+    background-color: #939ba7;
+    background: linear-gradient(to bottom, white 0%, #919BA5 30%, white 100%);
+  }
+  .irs--big .irs-min,
+  .irs--big .irs-max {
+    top: 0;
+    padding: 1px 5px;
+    color: white;
+    text-shadow: none;
+    background-color: #fff;
+    border-radius: 3px;
+  }
+  .irs--big .irs-from,
+  .irs--big .irs-to,
+  .irs--big .irs-single {
+    color: white;
+    text-shadow: none;
+    padding: 1px 5px;
+    background-color: #fff;
+    background: #fff;
+    border-radius: 3px;
+  }
+  .irs--big .irs-grid-pol {
+    background-color: gradient(180deg, #6FCF97 0%, #66D2EA 100%);;
+  }
+  .irs--big .irs-grid-text {
+    color: #428bca;
+  }

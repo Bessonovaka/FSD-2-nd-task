@@ -1,0 +1,73 @@
+aside.filter
+    form.form
+        .form__group
+            .form__item
+                h3.form__label.title-label даты пребывания в отеле
+                input(type="date").form__input.dropdown
+            .form__item
+                h3.form__label.title-label гости
+                select.form__input.dropdown
+                    option(hidden="").dropdown__item Сколько гостей
+                    option.dropdown__item 2
+        .form__group
+            .form__item
+                include ../range-slider/range-slider
+                span.text-small Стоимость за сутки пребывания в номере
+        .form__group
+            .form__item
+                .checkbox__wrapper
+                    h3.checkbox__title.title-label Checkbox Buttons
+                    label.checkbox.text-medium Можно курить 
+                        input(type="checkbox")
+                        span.checkbox__custom
+                    label.checkbox.text-medium Можно с питомцами
+                        input(type="checkbox" checked)
+                        span.checkbox__custom
+                    label.checkbox.text-medium Можно пригласить гостей (до 10 человек) 
+                        input(type="checkbox" checked)
+                        span.checkbox__custom
+        .form__group
+            .form__item
+                h3.checkbox__title.title-label доступность
+                .checkbox__wrapper
+                    label.checkbox
+                        .checkbox__info
+                            .title-label Широкий коридор
+                            .text-small Ширина коридоров в номере не менее 91 см.
+                        input(type="checkbox")
+                        span.checkbox__custom
+                    label.checkbox
+                        .checkbox__info
+                            .title-label Помощник для инвалидов
+                            .text-small На 1 этаже вас встретит специалист и проводит до номера.
+                        input(type="checkbox")
+                        span.checkbox__custom
+        .form-group
+            .form__item
+                h3.form__label.title-label удобства номера
+                select.form__input.dropdown
+                    option.dropdown__item 2 спальни, 2 кровати...
+                    option.dropdown__item 2
+        .form__group
+            .form__item
+                    h3.checkbox__title.title-label дополнительные удобства
+                        +icon('arrow-to-down','checkbox__icon')
+                    .checkbox__wrapper.checkbox-expandable-list
+                        label.checkbox.text-medium Завтрак
+                            input(type="checkbox")
+                            span.checkbox__custom
+                        label.checkbox.text-medium Письменный стол
+                            input(type="checkbox" checked)
+                            span.checkbox__custom
+                        label.checkbox.text-medium Стул для кормления 
+                            input(type="checkbox" checked)
+                            span.checkbox__custom
+                        label.checkbox.text-medium Кроватка 
+                            input(type="checkbox" checked)
+                            span.checkbox__custom
+                        label.checkbox.text-medium Телевизор
+                            input(type="checkbox")
+                            span.checkbox__custom
+                        label.checkbox.text-medium Шампунь 
+                            input(type="checkbox")
+                            span.checkbox__custom
