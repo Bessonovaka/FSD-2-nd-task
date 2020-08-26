@@ -1,0 +1,11 @@
+.search-room {
+    background: #FFFFFF;
+    display: flex;
+    & > * {
+        margin-right: 60px;
+        &:last-child {margin-right: 0;}
+    }
+    &__title {
+        margin-bottom: 21px;
+    }
+}

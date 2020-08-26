@@ -19,7 +19,26 @@ $(document).ready(function () {
         });
     }
 
+    let roomCardSlider = function () {
+        $('.js-room-card-slider').each(function (idx) {
+            let roomCardSliderClass = "room-card-slider-" + idx;
+            this.closest('.room-card-slider').classList.add(roomCardSliderClass);
+            $(this).slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                prevArrow: '.' + roomCardSliderClass + " .room-card-slider__navigation--prev",
+                nextArrow: '.' + roomCardSliderClass + " .room-card-slider__navigation--next",
+                appendDots: '.' + roomCardSliderClass + ' .room-card-slider__dots',
+                customPaging : function(slider, i) {
+                    return '<div class="room-card-slider__dot"></div>';
+                }
+            });
+        });
+    }
+
     rangeSlider();
     checkboxExpandableList();
+    roomCardSlider();
 
 });

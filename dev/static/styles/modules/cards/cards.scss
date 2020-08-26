@@ -1,0 +1,14 @@
+@import "room-card";
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    & > * {
+        margin-right: 12px;
+        margin-bottom: 20.5px;
+        &:last-child {
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+    }
+}

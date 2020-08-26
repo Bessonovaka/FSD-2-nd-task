@@ -4,5 +4,23 @@ block variables
 	-var title = 'Поиск номеров'
 
 block content
-	include modules/filter/filter
-	main.search-room__main
+	include modules/cards/room-card
+	.container
+		.search-room
+			include modules/filter/filter
+			main.search-room__main
+				.search-room__title.title-widget Номера, которые мы для вас подобрали 
+				.cards
+					+roomCard('888','','','','','','№888','люкс','9 900₽ ','145 ')
+					+roomCard('840','','','','','_border','№840','','9 900₽ ','65 ')
+					+roomCard('980','','','','_border','_border','№980','люкс','8 500₽ ','35 ')
+					+roomCard('856','','','','','','№856','','7 300₽ ','19 ')
+					+roomCard('740','','','','','_border','№740','','6 000₽ ','44 ')
+					+roomCard('982','','','','_border','_border','№982','','5 800₽ ','56 ')
+					+roomCard('678','','','','','','№678','','5 500₽ ','45 ')
+					+roomCard('450','','','','','_border','№450','','5 300₽ ','39 ')
+					+roomCard('350','','','','_border','_border','№350','','5 000₽ ','77 ')
+					+roomCard('666','','','','','','№666','','5 000₽ ','35 ')
+					+roomCard('444','','','','_border','_border','№444','','5 000₽ ','35 ')
+					+roomCard('352','','','','_border','_border','№352','','5 000₽ ','35 ')
+				include modules/pagination/pagination

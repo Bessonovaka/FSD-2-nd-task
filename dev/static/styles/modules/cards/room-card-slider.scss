@@ -1,0 +1,53 @@
+.room-card-slider {
+    height: 151.38px;
+    position: relative;
+    width: 100%;
+    &__navigation {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        z-index: 99;
+        &-icon {
+            height: 12px;
+            fill: $white;
+            width: 8px;
+        }
+        &--prev {
+            left: 18px;
+        }
+        &--next {
+            right: 18px;
+        }
+    }
+    &__dots {
+        bottom: 20px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+    &__dot {
+        border: 1px solid #FFFFFF;
+        border-radius: 50%;
+        cursor: pointer;
+        display: block;
+        filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+        height: 7.49px;
+        width: 7.5px;
+    }
+    .slick-dots {
+        align-items: center;
+        display: flex;
+        li {
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.slick-active {
+                .room-card-slider__dot {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+}

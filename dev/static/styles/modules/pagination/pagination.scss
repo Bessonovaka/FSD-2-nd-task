@@ -1,0 +1,52 @@
+.pagination {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 11px;
+    &__wrapper {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+    &__list {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        &--active {
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            border-radius: 22px;
+            .pagination__link {
+                color: #FFFFFF;
+            }
+        }
+    }
+    &__link {
+        color: rgba(31, 32, 65, 0.5);
+        font-size: 12px;
+        line-height: 15px;
+        text-decoration: none;
+    }
+    &__btn {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        border-radius: 22px;
+        height: 40px;
+        width: 40px;
+    }
+    &__icon {
+        height: 15px;
+        fill: $white;
+        width: 15px;
+    }
+}

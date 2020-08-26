@@ -1,0 +1,55 @@
+@import "room-card-slider";
+
+.room-card {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+    display: flex;
+    height: 257px;
+    flex-direction: column;
+    max-width: 270px;
+    &__img {
+        border-radius: 4px 4px 0px 0px;
+        background-size: cover;
+        height: 151.38px;
+    }
+    &-info {
+        &__number {
+            font-family: Quicksand;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            margin-right: 5px;
+        }
+        &__text {
+            color: #BC9CFF;
+        }
+        &__row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        &__stars {
+            display: flex;
+            & > * {
+                margin-right: 2px;
+                &:last-child {margin-right: 0;}
+            }
+        }
+        &__icon {
+            width: 22px;
+            height: 22px;
+        }
+        &__item {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        &__line {
+            background: rgba(31, 32, 65, 0.1);
+            height: 1px;
+            margin: 0 auto;
+            width: 230px;
+        }
+    }
+}
