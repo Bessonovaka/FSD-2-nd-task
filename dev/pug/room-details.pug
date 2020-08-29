@@ -1,0 +1,44 @@
+extends layout/main
+
+block variables
+    -var title = 'Сведения о номере'
+
+block content
+    .container
+        .room-details
+            .room-details__banner.room-details-banner
+                .room-details-banner__col
+                    img(src="static/images/content/room-details/1.jpg", alt="Фото номера")
+                .room-details-banner__col
+                    img(src="static/images/content/room-details/2.jpg", alt="Фото номера")
+                    img(src="static/images/content/room-details/3.jpg", alt="Фото номера")
+        main.room-details__main
+            .room-details__col
+                .room-details__info
+                    .room-details__data.room-details-data
+                        .room-details__title.title-inside Сведения о номере
+                        ul.room-details-data__list
+                            li.room-details-data__item
+                                img(src="static/images/content/room-details/insert_emoticon.png", alt="Комфорт").room-details-data__icon
+                                .room-details-data__descr.text <b>Комфорт</b> Шумопоглощающие стены
+                            li.room-details-data__item
+                                img(src="static/images/content/room-details/location_city.png", alt="Комфорт").room-details-data__icon
+                                .room-details-data__descr.text <b>Удобство</b> Окно в каждой из спален
+                            li.room-details-data__item
+                                img(src="static/images/content/room-details/whatshot.png", alt="Комфорт").room-details-data__icon
+                                .room-details-data__descr.text <b>Уют</b> Номер оснащён камином
+                    .room-details__impress.room-details-impress
+                        .room-details__title.title-inside Впечатления от номера
+                        .room-details-impress__body
+                            include modules/pie-chart/pie-chart
+                            ul.room-details-impress__list
+                                li.room-details-impress__item.room-details-impress__item--orange.text Великолепно
+                                li.room-details-impress__item.room-details-impress__item--green.text Хорошо
+                                li.room-details-impress__item.room-details-impress__item--purple.text Удовлетворительно
+                                li.room-details-impress__item.room-details-impress__item--black.text Разочарован
+                .room-details__reviews.room-details-reviews
+                    .room-details__title.title-inside Отзывы посетителей номера
+            .room-details__col
+                form.form
+
+        

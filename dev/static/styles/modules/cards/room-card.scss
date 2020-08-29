@@ -15,11 +15,13 @@
     }
     &-info {
         &__number {
+            color: $dark-shade-100;
             font-family: Quicksand;
             font-weight: bold;
             font-size: 14px;
             line-height: 17px;
             margin-right: 5px;
+            text-decoration: none;
         }
         &__text {
             color: #BC9CFF;

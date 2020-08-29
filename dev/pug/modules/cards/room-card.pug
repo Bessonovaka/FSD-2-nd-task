@@ -1,4 +1,4 @@
-mixin roomCard(img,starmod1,starmod2,starmod3,starmod4,starmod5,number,lux,price,review)
+mixin roomCard(img,starmod1,starmod2,starmod3,starmod4,starmod5,link,number,lux,price,review)
     .room-card
         .room-card-slider
             .room-card-slider__navigation.room-card-slider__navigation--prev
@@ -15,7 +15,7 @@ mixin roomCard(img,starmod1,starmod2,starmod3,starmod4,starmod5,number,lux,price
             .room-card-info__row
                 .room-card-info__col
                     .room-card-info__item
-                        .room-card-info__number=number
+                        a(href=link).room-card-info__number=number
                         .room-card-info__text.title-label=lux
                 .room-card-info__col
                     b.room-card-info__text.text-medium=price

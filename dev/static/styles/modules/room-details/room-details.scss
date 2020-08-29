@@ -1,0 +1,87 @@
+@import "room-details-banner";
+@import "../pie-chart/pie-chart";
+
+.room-details {
+    &__title {
+        margin-bottom: 23px;
+    }
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+        & > * {
+            margin-right: 70px;
+            &:last-child {margin-right: 0;}
+        }
+    }
+    &__info {
+        display: flex;
+    }
+    &-data {
+        margin-right: 70px;
+        &__item {
+            align-items: center;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 40px;
+            position: relative;
+            &::after {
+                content: '';
+                width: 100%;
+                height: 1px;
+                background: rgba(31, 32, 65, 0.1);
+                left: 0;
+                position: absolute;
+                top: 65px;
+            }
+        }
+        &__descr {
+            display: flex;
+            flex-direction: column;
+        }
+        &__icon {  
+            height: 48px;
+            margin-right: 10px;
+            width: 48px;
+        }
+    }
+    &-impress {
+        &__body {
+            align-items: flex-end;
+            display: flex;
+        }
+        &__item {
+            margin-left: 45px;
+            position: relative;
+            &::before {
+                content: '';
+                border-radius: 50%;
+                height: 10px;
+                left: -15px;
+                position: absolute;
+                top: 7.5px;
+                width: 10px;
+            }
+            &--orange {
+                &::before {
+                    background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%); 
+                }
+            }
+            &--green {
+                &::before {
+                    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+                }
+            }
+            &--purple {
+                &::before {
+                    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                }
+            }
+            &--black {
+                &::before {
+                    background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+                }
+            }
+        }
+    }
+}

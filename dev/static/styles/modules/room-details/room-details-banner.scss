@@ -1,0 +1,7 @@
+.room-details-banner {
+    display: flex;
+    &__col {
+        display: flex;
+        flex-direction: column;
+    }
+}

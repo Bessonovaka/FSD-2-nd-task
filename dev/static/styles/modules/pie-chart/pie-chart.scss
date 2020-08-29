@@ -1,0 +1,22 @@
+.pie-chart {
+    &__wrapper {
+        height: 120px;
+        position: relative;
+        width: 120px;
+    }
+    &__info {
+        align-items: center;
+        background-color: #fff;
+        border-radius: 50%;
+        color: #BC9CFF;
+        display: flex;
+        height: 116px;
+        justify-content: center;
+        flex-direction: column;
+        left: 2px;
+        position: absolute;
+        top: 2px;
+        width: 116px;
+    }
+    
+}
