@@ -36,9 +36,60 @@ block content
                                 li.room-details-impress__item.room-details-impress__item--green.text Хорошо
                                 li.room-details-impress__item.room-details-impress__item--purple.text Удовлетворительно
                                 li.room-details-impress__item.room-details-impress__item--black.text Разочарован
-                .room-details__reviews.room-details-reviews
+                .room-details__reviews
                     .room-details__title.title-inside Отзывы посетителей номера
+                    include modules/review/review
+                    +review('1.png','12','Мурад Сарафанов','5 дней назад','Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+                    +review('2.jpg','2','Патрисия Стёклышкова','Неделю назад','Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
+                .room-details__rules-cancel
+                    .rules
+                        .room-details__title.title-inside Правила 
+                        ul.bullet-list
+                            li.bullet-list__item.text Нельзя с питомцами
+                            li.bullet-list__item.text Без вечеринок и мероприятий
+                            li.bullet-list__item.text Время прибытия — после 13:00, а выезд до 12:00
+                    .cancel
+                        .room-details__title.title-inside Отмена
+                        p.text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
             .room-details__col
                 form.form
-
+                    .form__group
+                        .form__item
+                            span.room-card-info__number №
+                            span.title-widget 888 
+                            span.title-label.title--color-purple люкс
+                        .form__item
+                            b.text-medium.text--color-light 9 990₽
+                            span.text-medium.text--color-light  в сутки
+                    .form__group
+                        .form__item
+                            h3.form__label.title-label прибытие
+                            input(type="date").form__input.dropdown
+                        .form__item
+                            h3.form__label.title-label выезд
+                            input(type="date").form__input.dropdown
+                    .form__group
+                        .form__item
+                            h3.form__label.title-label гости
+                            select.form__input.dropdown
+                                option(hidden="").dropdown__item Сколько гостей
+                                option.dropdown__item 2
+                    .form__group
+                        span.form__item.text 9 990₽ х 4 суток
+                        span.form__item.text.text--right 39 960₽
+                    .form__group
+                        .form__item
+                            span.text Сбор за услуги: скидка 2 179₽
+                            a.info.text i
+                        span.form__item.text.text--right 0₽
+                    .form__group
+                        .form__item
+                            span.text Сбор за дополнительные услуги
+                            a.info.text i
+                        span.form__item.text.text--right 300₽
+                    .form__group
+                        span.form__item.title-inside Итого
+                        span.form__item.title-inside.text--right 38 081₽
+                    button.btn.btn--bg-gradient 
+                        a(href="search-room.html").btn__link забронировать
         

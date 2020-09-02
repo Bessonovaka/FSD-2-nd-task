@@ -1,0 +1,12 @@
+mixin review(img,count,title,date,text)
+    .review
+        .review__photo
+            img(src=`static/images/content/review/${img}`, alt="Фото автора").review__img
+            .review__like.like
+                .like__icon
+                .like__count=count
+        .review__info
+            span.review__title.text
+                b=title
+            span.review__date.text=date
+            p.review__text.text=text
