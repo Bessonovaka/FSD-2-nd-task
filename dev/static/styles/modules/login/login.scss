@@ -1,0 +1,12 @@
+.login {
+    background: url('../images/content/registration-bg.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    &__form {
+        margin: 242px 0;
+    }
+    &__input {
+        margin-bottom: 10px;
+    }
+}
