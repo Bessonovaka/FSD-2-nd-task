@@ -1,0 +1,26 @@
+extends layout/main
+
+block variables
+    -var title = 'Регистрация'
+
+block content
+    .registration
+        form.form.registration__form.form--sz-fix
+            h1.form__title.title-widget Регистрация аккаунта
+            input(type="text" placeholder="Имя").registration__input.dropdown
+            input(type="text" placeholder="Фамилия").registration__input.dropdown
+            include modules/radio-button/radio-button
+            .form__item
+                h3.form__label.title-label Дата рождения
+                input(type="date").form__input.dropdown
+            .form__item
+                h3.form__label.title-label Данные для входа в сервис
+                input(type="text" placeholder="Email").form__input.dropdown
+                input(type="text" placeholder="Пароль").form__input.dropdown
+            include modules/toogle/toogle
+            button.form__btn.btn.btn--bg-gradient 
+                a(href="search-room.html").btn__link регистрация
+                +icon('arrow_forward','arrow-forward')
+            .form__footer
+                span.text-medium.text--nowrap Уже есть аккаунт на Toxin 
+                a(href="").btn Войти

@@ -27,11 +27,35 @@
     }
     &__label {
         margin-bottom: 5px;
+        margin-top: 10px;
     }
     &__title {
         margin-bottom: 30px;
     }
     &__btn {
+        margin-top: 10px;
+    }
+    &__line {
+        margin-bottom: 10px;
+    }
+    &__input {
+        margin-bottom: 10px;
+    }
+    &__footer {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
         margin-top: 30px;
+        & > * {
+            margin-right: 35px;
+            &:last-child {margin-right: 0;}
+        }
+    }
+}
+.form {
+    &--sz {
+        &-fix {
+            width: 380px;
+        }
     }
 }

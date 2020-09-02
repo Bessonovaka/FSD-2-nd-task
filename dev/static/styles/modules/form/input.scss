@@ -7,6 +7,11 @@
     padding: 10px 0;
     padding-left: 15px;
     width: 100%;
+    &::placeholder {
+        color: rgba(31, 32, 65, 0.25);
+        font-size: 14px;
+        line-height: 18px;
+    }
     &-subscription {
         align-items: center;
         border: 1px solid $dark-shade-25;
@@ -17,4 +22,8 @@
             border: none;
         }
     }
+}
+.radio-button {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    margin-right: 14px;
 }
